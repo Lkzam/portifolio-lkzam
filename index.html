@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luca Mazieiro Ribeiro — Desenvolvedor Full Stack e Fundador da Nova Iris">
+    <title>Lkzam — Dev Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <span class="bracket">&lt;</span>Lkzam<span class="bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#projetos">projetos</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="hero-inner">
+            <!-- Left: Text -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    Disponível para projetos
+                </div>
+                <h1 class="hero-title">
+                    <span class="t-greeting">Olá, eu sou</span>
+                    <span class="t-name glitch" data-text="Luca Mazieiro">Luca Mazieiro</span>
+                    <span class="t-surname">Ribeiro</span>
+                </h1>
+                <p class="hero-sub">
+                    <span id="typewriter"></span><span class="type-cursor">|</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn btn-primary magnetic">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-ghost magnetic">Falar Comigo</a>
+                </div>
+            </div>
+
+            <!-- Right: Code window -->
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="cw-header">
+                        <div class="cw-dots">
+                            <span class="cd red"></span>
+                            <span class="cd yellow"></span>
+                            <span class="cd green"></span>
+                        </div>
+                        <span class="cw-filename">lkzam.js</span>
+                    </div>
+                    <div class="cw-body">
+                        <div class="cl"><span class="kw">const</span> <span class="vr">lkzam</span> <span class="op">=</span> {</div>
+                        <div class="cl">  <span class="pr">name</span>: <span class="st">"Luca Mazieiro"</span>,</div>
+                        <div class="cl">  <span class="pr">alias</span>: <span class="st">"Lkzam"</span>,</div>
+                        <div class="cl">  <span class="pr">role</span>: <span class="st">"Full Stack Dev"</span>,</div>
+                        <div class="cl">  <span class="pr">company</span>: <span class="st">"Nova Iris"</span>,</div>
+                        <div class="cl">  <span class="pr">exp</span>: <span class="st">"3+ anos"</span>,</div>
+                        <div class="cl">  <span class="pr">skills</span>: [<span class="st">"React"</span>, <span class="st">"Node"</span>],</div>
+                        <div class="cl">  <span class="pr">status</span>: <span class="st">"open_to_work"</span> <span class="cm">✓</span></div>
+                        <div class="cl">};</div>
+                        <div class="cl caret-line"><span class="caret">▊</span></div>
+                    </div>
+                </div>
+                <div class="cw-glow"></div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <div class="sh-line"></div>
+            <span>scroll</span>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <span class="s-tag reveal">// sobre_mim</span>
+            <h2 class="s-title reveal">Quem sou eu</h2>
+
+            <div class="about-grid">
+                <div class="about-left">
+                    <p class="about-lead reveal">
+                        Desenvolvedor apaixonado por criar experiências digitais únicas. Com mais de
+                        <em>3 anos de experiência</em>, transformo ideias em produtos reais.
+                    </p>
+                    <p class="about-body reveal">
+                        Fundei a <em>Nova Iris</em>, empresa focada em soluções web criativas e de alto impacto.
+                        Trabalho com startups e empresas — sempre buscando o equilíbrio perfeito entre design e código.
+                    </p>
+                    <div class="tech-pills reveal">
+                        <span>React</span><span>Next.js</span><span>Node.js</span>
+                        <span>TypeScript</span><span>Tailwind</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="stat-card reveal">
+                        <span class="sn" data-count="3" data-suffix="+">0</span>
+                        <span class="sl">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="sn" data-count="20" data-suffix="+">0</span>
+                        <span class="sl">Projetos Entregues</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="sn" data-count="1">0</span>
+                        <span class="sl">Empresa Fundada</span>
+                    </div>
+                    <div class="stat-card reveal">
+                        <span class="sn" data-count="100" data-suffix="%">0</span>
+                        <span class="sl">Dedicação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects" id="projetos">
+        <div class="container">
+            <span class="s-tag reveal">// projetos</span>
+            <h2 class="s-title reveal">O que eu construí</h2>
+
+            <div class="projects-grid">
+
+                <!-- Bico -->
+                <article class="p-card reveal" data-tilt>
+                    <div class="p-mockup bico-bg">
+                        <div class="pm-glow"></div>
+                        <div class="browser">
+                            <div class="b-bar">
+                                <span class="bd"></span><span class="bd"></span><span class="bd"></span>
+                                <span class="b-url">bico-mu.vercel.app</span>
+                            </div>
+                            <div class="b-body">
+                                <div class="b-nav-strip"></div>
+                                <div class="b-cards-row">
+                                    <div class="b-mini-card"></div>
+                                    <div class="b-mini-card"></div>
+                                    <div class="b-mini-card"></div>
+                                </div>
+                                <div class="b-rows">
+                                    <div class="b-row w80"></div>
+                                    <div class="b-row w55"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-labels">
+                            <span class="lbl">Web App</span>
+                            <span class="lbl">Full Stack</span>
+                        </div>
+                        <h3>Bico</h3>
+                        <p>Plataforma de bicos e serviços — conectando quem precisa de serviços a quem presta, de forma simples e eficiente.</p>
+                        <a href="https://bico-mu.vercel.app/" target="_blank" rel="noopener" class="p-link">
+                            Ver projeto <span class="arr">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Intuir Yoga -->
+                <article class="p-card reveal" data-tilt>
+                    <div class="p-mockup yoga-bg">
+                        <div class="pm-glow"></div>
+                        <div class="browser">
+                            <div class="b-bar">
+                                <span class="bd"></span><span class="bd"></span><span class="bd"></span>
+                                <span class="b-url">intuir-yoga.vercel.app</span>
+                            </div>
+                            <div class="b-body">
+                                <div class="b-hero-block"></div>
+                                <div class="b-rows" style="padding: 0 10px 10px">
+                                    <div class="b-row w90"></div>
+                                    <div class="b-row w60"></div>
+                                    <div class="b-row w40"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-labels">
+                            <span class="lbl">Landing Page</span>
+                            <span class="lbl">Design</span>
+                        </div>
+                        <h3>Intuir Yoga</h3>
+                        <p>Site institucional para estúdio de yoga — design sereno e minimalista com foco em bem-estar e alta conversão.</p>
+                        <a href="https://intuir-yoga.vercel.app/" target="_blank" rel="noopener" class="p-link">
+                            Ver projeto <span class="arr">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Nova Iris -->
+                <article class="p-card reveal" data-tilt>
+                    <div class="p-mockup nova-bg">
+                        <div class="pm-glow nova-glow"></div>
+                        <div class="nova-logo-display">
+                            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="60" cy="60" r="50" stroke="#e0aaff" stroke-width="1.5" opacity="0.4"/>
+                                <circle cx="60" cy="60" r="35" stroke="#9d4edd" stroke-width="1.5" opacity="0.7"/>
+                                <circle cx="60" cy="60" r="20" stroke="#7b2cbf" stroke-width="2"/>
+                                <circle cx="60" cy="60" r="8" fill="#7b2cbf"/>
+                                <line x1="60" y1="10" x2="60" y2="110" stroke="#e0aaff" stroke-width="0.8" opacity="0.25"/>
+                                <line x1="10" y1="60" x2="110" y2="60" stroke="#e0aaff" stroke-width="0.8" opacity="0.25"/>
+                                <line x1="24.4" y1="24.4" x2="95.6" y2="95.6" stroke="#e0aaff" stroke-width="0.8" opacity="0.15"/>
+                                <line x1="95.6" y1="24.4" x2="24.4" y2="95.6" stroke="#e0aaff" stroke-width="0.8" opacity="0.15"/>
+                            </svg>
+                            <span class="nova-name">Nova Iris</span>
+                        </div>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-labels">
+                            <span class="lbl lbl-special">Empresa</span>
+                            <span class="lbl">Fundador</span>
+                        </div>
+                        <h3>Nova Iris</h3>
+                        <p>Empresa que fundei — criando soluções digitais criativas, funcionais e de alto impacto visual para o mercado.</p>
+                        <span class="p-link soon">Em breve <span class="arr">→</span></span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <span class="s-tag reveal">// habilidades</span>
+            <h2 class="s-title reveal">Com o que trabalho</h2>
+
+            <div class="skills-grid">
+                <div class="sk-group reveal">
+                    <div class="sk-head">
+                        <div class="sk-icon">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <ul>
+                        <li>React / Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>Framer Motion</li>
+                    </ul>
+                </div>
+
+                <div class="sk-group reveal">
+                    <div class="sk-head">
+                        <div class="sk-icon">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul>
+                        <li>Node.js / Express</li>
+                        <li>PostgreSQL</li>
+                        <li>Prisma ORM</li>
+                        <li>REST APIs</li>
+                        <li>Auth &amp; JWT</li>
+                    </ul>
+                </div>
+
+                <div class="sk-group reveal">
+                    <div class="sk-head">
+                        <div class="sk-icon">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Ferramentas</h3>
+                    </div>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>Vercel / Deploy</li>
+                        <li>Figma / UI Design</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contato">
+        <div class="contact-orb"></div>
+        <div class="container">
+            <div class="contact-inner reveal">
+                <span class="s-tag">// contato</span>
+                <h2 class="s-title">Vamos criar algo</h2>
+                <p class="contact-body">
+                    Tem um projeto em mente? Vamos conversar sobre como posso transformar sua ideia em realidade digital.
+                </p>
+                <a href="mailto:lucamr150405@gmail.com" class="btn btn-primary large magnetic">
+                    Mandar um Email
+                </a>
+                <div class="social-row">
+                    <a href="https://github.com/Lkzam" target="_blank" rel="noopener" class="s-link">GitHub</a>
+                    <span class="s-sep">—</span>
+                    <a href="https://www.linkedin.com/in/luca-mazieiro-ribeiro" target="_blank" rel="noopener" class="s-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span>© 2025 Luca Mazieiro Ribeiro</span>
+                <span class="footer-mid">Feito com código &amp; criatividade</span>
+                <span class="footer-brand">Nova Iris</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
