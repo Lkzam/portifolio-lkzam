@@ -490,9 +490,41 @@ section { padding: 7rem 0; }
 .p-mockup {
     height: 210px; position: relative; overflow: hidden;
 }
-.bico-bg  { background: linear-gradient(140deg, #1a0533 0%, #3a1168 100%); }
-.yoga-bg  { background: linear-gradient(140deg, #0a1a2e 0%, #1c3a60 100%); }
-.nova-bg  { background: linear-gradient(140deg, #12052a 0%, #2a1060 100%); }
+.bico-bg   { background: linear-gradient(140deg, #1a0533 0%, #3a1168 100%); }
+.xmlbot-bg { background: linear-gradient(140deg, #0a1a0e 0%, #0d3320 100%); }
+.nova-bg   { background: linear-gradient(140deg, #12052a 0%, #2a1060 100%); }
+
+/* XML Bot mockup */
+.b-xml-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 10px;
+}
+.b-xml-icon {
+    width: 22px; height: 22px; border-radius: 5px;
+    background: rgba(74, 222, 128, 0.3);
+    border: 1px solid rgba(74, 222, 128, 0.4);
+    flex-shrink: 0;
+}
+.b-xml-title {
+    height: 7px; width: 60%; border-radius: 3px;
+    background: rgba(255,255,255,0.2);
+}
+.b-xml-rows { display: flex; flex-direction: column; gap: 7px; margin-bottom: 12px; }
+.b-xml-row {
+    display: flex; align-items: center; gap: 7px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px; padding: 5px 7px;
+}
+.xml-dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+}
+.xml-dot.green  { background: #4ade80; box-shadow: 0 0 5px rgba(74,222,128,0.6); }
+.xml-dot.yellow { background: #facc15; box-shadow: 0 0 5px rgba(250,204,21,0.6); }
+.b-xml-btn {
+    height: 18px; width: 45%; border-radius: 4px;
+    background: rgba(74, 222, 128, 0.25);
+    border: 1px solid rgba(74, 222, 128, 0.35);
+}
 
 .pm-glow {
     position: absolute;
